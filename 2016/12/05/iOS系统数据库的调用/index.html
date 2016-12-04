@@ -19,25 +19,25 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS系统数据库的调用">
 <meta property="og:url" content="http://59.110.60.152/2016/12/05/iOS系统数据库的调用/index.html">
-<meta property="og:site_name" content="神如哥一般">
+<meta property="og:site_name" content="Kieron Zhang">
 <meta property="og:description" content="SQLite简介SQLite 是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite 是在世界上最广泛部署的 SQL 数据库引擎。SQLite 源代码不受版权限制。 基础数据库语句：《SQLite菜鸟教程》">
-<meta property="og:image" content="http://59.110.60.152/wp-content/uploads/2016/11/A6CCBEFD-E0C6-4677-A3BA-F45E13561DC2-1.png">
-<meta property="og:image" content="http://59.110.60.152/wp-content/uploads/2016/11/1750016A-4C04-4413-95BF-272C2A82CB6C.png">
-<meta property="og:image" content="http://59.110.60.152/wp-content/uploads/2016/11/81BF5CD9-5DAD-40E7-9DF1-9175F7BFD94F.png">
-<meta property="og:updated_time" content="2016-12-04T20:24:26.140Z">
+<meta property="og:image" content="http://59.110.60.152/images/iOS系统数据库的调用-1.png">
+<meta property="og:image" content="http://59.110.60.152/images/iOS系统数据库的调用-2.png">
+<meta property="og:image" content="http://59.110.60.152/images/iOS系统数据库的调用-3.png">
+<meta property="og:updated_time" content="2016-12-04T21:33:27.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS系统数据库的调用">
 <meta name="twitter:description" content="SQLite简介SQLite 是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite 是在世界上最广泛部署的 SQL 数据库引擎。SQLite 源代码不受版权限制。 基础数据库语句：《SQLite菜鸟教程》">
-<meta name="twitter:image" content="http://59.110.60.152/wp-content/uploads/2016/11/A6CCBEFD-E0C6-4677-A3BA-F45E13561DC2-1.png">
+<meta name="twitter:image" content="http://59.110.60.152/images/iOS系统数据库的调用-1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="神如哥一般" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Kieron Zhang" type="application/atom+xml">
 
 
 
-    <link rel="shortcut icon" href="http://ohneo1co6.bkt.clouddn.com/logo.png?imageView2/2/w/100/interlace/0/q/100">
+    <link rel="shortcut icon" href="/favicon.png">
 
 
 
@@ -60,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>iOS系统数据库的调用 | 神如哥一般</title>
+<title>iOS系统数据库的调用 | Kieron Zhang</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -81,7 +81,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -100,14 +102,14 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="http://ohneo1co6.bkt.clouddn.com/logo.png?imageView2/2/w/300/interlace/0/q/100" class="animated zoomIn">
+            <img src="/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/">Kieron Zhang</a></h1>
         </hgroup>
 
         
-        <p class="header-subtitle">Kieron Zhang</p>
+        <p class="header-subtitle">Kieron Zhang Blog</p>
         
 
         
@@ -178,12 +180,6 @@
                             
                                 <a class="fa GitHub" href="https://github.com/KieronZhang" title="GitHub"></a>
                             
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa QQ" href="/“#130514988”" title="QQ"></a>
-                            
-                                <a class="fa 微信" href="/Wechat130514988” #PayPal: " title="微信"></a>
-                            
                         </ul>
                     </nav>
                 </section>
@@ -231,13 +227,13 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="http://ohneo1co6.bkt.clouddn.com/logo.png?imageView2/2/w/300/interlace/0/q/100" class="animated zoomIn">
+                <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Kieron Zhang</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">Kieron Zhang</p>
+            <p class="header-subtitle">Kieron Zhang Blog</p>
             
             <nav class="header-menu">
                 <ul>
@@ -259,12 +255,6 @@
                                 <a class="fa Email" target="_blank" href="mailto:kieronzhang@gmail.com" title="Email"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="https://github.com/KieronZhang" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa QQ" target="_blank" href="/“#130514988”" title="QQ"></a>
-                            
-                                <a class="fa 微信" target="_blank" href="/Wechat130514988” #PayPal: " title="微信"></a>
                             
                         </ul>
             </nav>
@@ -320,152 +310,32 @@
 <p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
 <the rest="" of="" contents="" |="" 余下全文="">
 
-<p>Xcode中引入SQLite 首先创建一个项目。<br>接下来引入SQLite，如图:<br><img src="http://59.110.60.152/wp-content/uploads/2016/11/A6CCBEFD-E0C6-4677-A3BA-F45E13561DC2-1.png" alt="a6ccbefd-e0c6-4677-a3ba-f45e13561dc2" width="1146" height="457" class="alignnone size-full wp-image-33"></p>
-<p>点开加号<br><img class="alignnone size-full wp-image-34" src="http://59.110.60.152/wp-content/uploads/2016/11/1750016A-4C04-4413-95BF-272C2A82CB6C.png" alt="1750016a-4c04-4413-95bf-272c2a82cb6c" width="441" height="525"></p>
-<p>选择一个库点击Add之后，完成后<br><img class="alignnone size-full wp-image-59" src="http://59.110.60.152/wp-content/uploads/2016/11/81BF5CD9-5DAD-40E7-9DF1-9175F7BFD94F.png" alt="81bf5cd9-5dad-40e7-9df1-9175f7bfd94f" width="704" height="166"><br>至此，SQLite库已经添加完成。</p>
+<p>Xcode中引入SQLite 首先创建一个项目。<br>接下来引入SQLite，如图:<br><img src="/images/iOS系统数据库的调用-1.png" alt="引入SQLite"> </p>
+<p>点开加号<br><img src="/images/iOS系统数据库的调用-2.png" alt="引入SQLite"> </p>
+<p>选择一个库点击Add之后，完成后<br><img src="/images/iOS系统数据库的调用-3.png" alt="引入SQLite"><br>至此，SQLite库已经添加完成。</p>
 <h1 id="创建打开数据库"><a href="#创建打开数据库" class="headerlink" title="创建打开数据库"></a>创建打开数据库</h1><p>使用 <code>sqlite3_open</code> 方法可以打开数据库，如果没有该文件，则系统会自动创建一个文件，并且打开。</p>
 <p>首先引入数据库头文件</p>
-<pre lang="objc" escaped="true">
-#import "<sqlite.h>"
-</sqlite.h></pre>
-
-<h2 id="创建数据库路径"><a href="#创建数据库路径" class="headerlink" title="创建数据库路径"></a>创建数据库路径</h2><pre lang="objc" escaped="true">//数据库路径
-NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject; 
-NSString *sqlitePath = [path stringByAppendingPathComponent:@"database.sqlite"];
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">"&lt;sqlite.h&gt;"</span></span></div></pre></td></tr></table></figure>
+<h2 id="创建数据库路径"><a href="#创建数据库路径" class="headerlink" title="创建数据库路径"></a>创建数据库路径</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//数据库路径</span></div><div class="line"><span class="built_in">NSString</span> *path = <span class="built_in">NSSearchPathForDirectoriesInDomains</span>(<span class="built_in">NSDocumentDirectory</span>, <span class="built_in">NSUserDomainMask</span>, <span class="literal">YES</span>).firstObject; </div><div class="line"><span class="built_in">NSString</span> *sqlitePath = [path stringByAppendingPathComponent:<span class="string">@"database.sqlite"</span>];</div></pre></td></tr></table></figure>
 <h2 id="打开数据库"><a href="#打开数据库" class="headerlink" title="打开数据库"></a>打开数据库</h2><p>先创建一个全局变量，这个变量是数据库打开后返回的一个操作指针，可以使用它来对数据库进行操作</p>
-<pre lang="objc" escaped="true">
-sqlite3 *contactDatabase
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sqlite3 *contactDatabase</div></pre></td></tr></table></figure>
 <p>打开数据库</p>
-<pre lang="objc" escaped="true">
-int result = sqlite3_open(sqlitePath.UTF8String, &contactDatabase);
-if (result == SQLITE_OK) {
-    //打开数据库成功
-}
-else {
-    //打开数据库失败
-}
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> result = sqlite3_open(sqlitePath.UTF8String, &amp;contactDatabase);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//打开数据库成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//打开数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="创建-amp-删除"><a href="#创建-amp-删除" class="headerlink" title="创建&amp;删除"></a>创建&amp;删除</h1><p><code>sqlite3_exce()</code> 执行一条非查询的语句</p>
-<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><pre lang="objc" escaped="true">
-NSString *sqlString = @"CREATE TABLE IF NOT EXISTS student (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, age INTEGER, address TEXT)";
-int result = sqlite3_exec(contactDatabase, sqlString.UTF8String, nil, nil, nil);
-if (result == SQLITE_OK) {
-    //创建数据库成功
-}
-else {
-    //创建数据库失败
-}
-</pre>
-
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><pre lang="objc" escaped="true">
-NSString *sqlString = @"drop table studets";
-int result = sqlite3_exec(contactDatabase, sqlString.UTF8String, nil, nil, nil);
-if (result == SQLITE_OK) {
-    //删除数据库成功
-}
-else {
-    //删除数据库失败
-}
-</pre>
-
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"CREATE TABLE IF NOT EXISTS student (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, age INTEGER, address TEXT)"</span>;</div><div class="line"><span class="keyword">int</span> result = sqlite3_exec(contactDatabase, sqlString.UTF8String, <span class="literal">nil</span>, <span class="literal">nil</span>, <span class="literal">nil</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//创建数据库成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//创建数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"drop table studets"</span>;</div><div class="line"><span class="keyword">int</span> result = sqlite3_exec(contactDatabase, sqlString.UTF8String, <span class="literal">nil</span>, <span class="literal">nil</span>, <span class="literal">nil</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//删除数据库成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//删除数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="插入-amp-更新-amp-删除"><a href="#插入-amp-更新-amp-删除" class="headerlink" title="插入&amp;更新&amp;删除"></a>插入&amp;更新&amp;删除</h1><p>SQLite可以使用占位符来插入数据</p>
-<h2 id="插入数据库-不使用占位符"><a href="#插入数据库-不使用占位符" class="headerlink" title="插入数据库 不使用占位符"></a>插入数据库 不使用占位符</h2><pre lang="objc" escaped="true">
-NSString *sqlString = [NSString stringWithFormat:@"INSERT INTO student (NAME, AGE, ADDRESS) VALUES ('%@', %@, '%@')", @"张三丰", @"127", @"北京市"];
-int result = sqlite3_exec(contactDatabase, sqlString.UTF8String, nil, nil, nil);
-if (result == SQLITE_OK) {
-    //插入数据库成功
-}
-else {
-    //插入数据库失败
-}
-</pre>
-
+<h2 id="插入数据库-不使用占位符"><a href="#插入数据库-不使用占位符" class="headerlink" title="插入数据库 不使用占位符"></a>插入数据库 不使用占位符</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"INSERT INTO student (NAME, AGE, ADDRESS) VALUES ('%@', %@, '%@')"</span>, <span class="string">@"张三丰"</span>, <span class="string">@"127"</span>, <span class="string">@"北京市"</span>];</div><div class="line"><span class="keyword">int</span> result = sqlite3_exec(contactDatabase, sqlString.UTF8String, <span class="literal">nil</span>, <span class="literal">nil</span>, <span class="literal">nil</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//插入数据库成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//插入数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>使用占位符，需要用到 <code>sqlite3_prepare_v2</code> 和 <code>sqlite3_bind_text</code> 方法</p>
-<pre lang="objc" escaped="true">
-NSString *sqlString = @"INSERT INTO student (NAME, AGE, ADDRESS) VALUES (?, ?, ?)";
-sqlite3_stmt *statement;
-int result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, -1, &statement, NULL);
-if (result == SQLITE_OK) {
-    sqlite3_bind_text(statement, 1, "张三丰", -1, nil)
-    sqlite3_bind_int(statement, 2, 127);
-    sqlite3_bind_text(statement, 3, "北京市", -1, nil)
-
-    if (sqlite3_step(statement) == SQLITE_DONE) {
-        //插入数据库成功
-    }
-    sqlite3_finalize(statement);
-}
-else {
-    //插入数据库失败
-}
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"INSERT INTO student (NAME, AGE, ADDRESS) VALUES (?, ?, ?)"</span>;</div><div class="line">sqlite3_stmt *statement;</div><div class="line"><span class="keyword">int</span> result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, <span class="number">-1</span>, &amp;statement, <span class="literal">NULL</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    sqlite3_bind_text(statement, <span class="number">1</span>, <span class="string">"张三丰"</span>, <span class="number">-1</span>, <span class="literal">nil</span>)</div><div class="line">    sqlite3_bind_int(statement, <span class="number">2</span>, <span class="number">127</span>);</div><div class="line">    sqlite3_bind_text(statement, <span class="number">3</span>, <span class="string">"北京市"</span>, <span class="number">-1</span>, <span class="literal">nil</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (sqlite3_step(statement) == SQLITE_DONE) &#123;</div><div class="line">        <span class="comment">//插入数据库成功</span></div><div class="line">    &#125;</div><div class="line">    sqlite3_finalize(statement);</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//插入数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="更新数据库"><a href="#更新数据库" class="headerlink" title="更新数据库"></a>更新数据库</h2><p>和插入数据库类似，用SQLite的update语句即可</p>
-<pre lang="objc" escaped="true">
-NSString *sqlString = @"UPDATE student SET AGE = 129 WHERE NAME = '张三丰'";
-int result = sqlite3_exec(contactDatabase, sqlString.UTF8String, nil, nil, nil);
-if (result == SQLITE_OK) {
-    //更新数据库成功
-}
-else {
-    //更新数据库失败
-}
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"UPDATE student SET AGE = 129 WHERE NAME = '张三丰'"</span>;</div><div class="line"><span class="keyword">int</span> result = sqlite3_exec(contactDatabase, sqlString.UTF8String, <span class="literal">nil</span>, <span class="literal">nil</span>, <span class="literal">nil</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//更新数据库成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//更新数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>也可使用占位符</p>
-<pre lang="objc" escaped="true">NSString *sqlString = @"UPDATE student SET AGE = ? WHERE NAME = ?";
-sqlite3_stmt *statement;
-int result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, -1, &statement, NULL);
-if (result == SQLITE_OK) {
-    sqlite3_bind_int(statement, 1, 129);
-    sqlite3_bind_text(statement, 2, "张三丰", -1, nil)
-
-    if (sqlite3_step(statement) == SQLITE_DONE) {
-        //插入数据库成功
-    }
-    sqlite3_finalize(statement);
-}
-else {
-    //插入数据库失败
-}
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"UPDATE student SET AGE = ? WHERE NAME = ?"</span>;</div><div class="line">sqlite3_stmt *statement;</div><div class="line"><span class="keyword">int</span> result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, <span class="number">-1</span>, &amp;statement, <span class="literal">NULL</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    sqlite3_bind_int(statement, <span class="number">1</span>, <span class="number">129</span>);</div><div class="line">    sqlite3_bind_text(statement, <span class="number">2</span>, <span class="string">"张三丰"</span>, <span class="number">-1</span>, <span class="literal">nil</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (sqlite3_step(statement) == SQLITE_DONE) &#123;</div><div class="line">        <span class="comment">//插入数据库成功</span></div><div class="line">    &#125;</div><div class="line">    sqlite3_finalize(statement);</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//插入数据库失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>3.删除数据库</p>
 <p>和插入数据库类似，用SQLite的update语句即可</p>
-<pre lang="objc" escaped="true">NSString *sqlString = @"DELETE FROM student WHERE NAME = '张三丰'";
-int result = sqlite3_exec(contactDatabase, sqlString.UTF8String, nil, nil, nil);
-if (result == SQLITE_OK) {
-    //删除成功
-}
-else {
-    //删除失败
-}
-</pre>
-
-<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><pre lang="objc" escaped="true">
-NSString *sqlString = @"SELECT * FROM student";
-sqlite3_stmt *statement;
-int result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, -1, &statement, NULL);
-if (result == SQLITE_OK) {
-    while (sqlite3_step(statement) == SQLITE_ROW) {
-        char *name = (char *)sqlite3_column_text(statement, 1);
-        NSString *nameString = [NSString stringWithUTF8String:name];
-        int age = sqlite3_column_int(statement, 2);
-        char *address = (char *)sqlite3_column_text(statement, 3);
-        NSString *addressString = [NSString stringWithUTF8String:address];
-        NSLog(@"name:%@  age:%d  address:%@", nameString, age, addressString);
-    }
-}
-else {
-    //查询失败
-}
-</pre>
-
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"DELETE FROM student WHERE NAME = '张三丰'"</span>;</div><div class="line"><span class="keyword">int</span> result = sqlite3_exec(contactDatabase, sqlString.UTF8String, <span class="literal">nil</span>, <span class="literal">nil</span>, <span class="literal">nil</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="comment">//删除成功</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//删除失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *sqlString = <span class="string">@"SELECT * FROM student"</span>;</div><div class="line">sqlite3_stmt *statement;</div><div class="line"><span class="keyword">int</span> result = sqlite3_prepare_v2(contactDatabase, sqlString.UTF8String, <span class="number">-1</span>, &amp;statement, <span class="literal">NULL</span>);</div><div class="line"><span class="keyword">if</span> (result == SQLITE_OK) &#123;</div><div class="line">    <span class="keyword">while</span> (sqlite3_step(statement) == SQLITE_ROW) &#123;</div><div class="line">        <span class="keyword">char</span> *name = (<span class="keyword">char</span> *)sqlite3_column_text(statement, <span class="number">1</span>);</div><div class="line">        <span class="built_in">NSString</span> *nameString = [<span class="built_in">NSString</span> stringWithUTF8String:name];</div><div class="line">        <span class="keyword">int</span> age = sqlite3_column_int(statement, <span class="number">2</span>);</div><div class="line">        <span class="keyword">char</span> *address = (<span class="keyword">char</span> *)sqlite3_column_text(statement, <span class="number">3</span>);</div><div class="line">        <span class="built_in">NSString</span> *addressString = [<span class="built_in">NSString</span> stringWithUTF8String:address];</div><div class="line">        <span class="built_in">NSLog</span>(<span class="string">@"name:%@  age:%d  address:%@"</span>, nameString, age, addressString);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">//查询失败</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </the>
       
     </div>
@@ -477,7 +347,7 @@ else {
         <p><span>本文标题:</span><a href="/2016/12/05/iOS系统数据库的调用/">iOS系统数据库的调用</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Kieron Zhang</a></p>
         <p><span>发布时间:</span>2016-12-05, 03:40:54</p>
-        <p><span>最后更新:</span>2016-12-05, 04:24:26</p>
+        <p><span>最后更新:</span>2016-12-05, 05:33:27</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/12/05/iOS系统数据库的调用/" title="iOS系统数据库的调用">http://59.110.60.152/2016/12/05/iOS系统数据库的调用/</a>
             <span class="copy-path" data-clipboard-text="原文: http://59.110.60.152/2016/12/05/iOS系统数据库的调用/　　作者: Kieron Zhang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -532,7 +402,7 @@ else {
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"iOS系统数据库的调用　| 神如哥一般　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"iOS系统数据库的调用　| Kieron Zhang　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -545,6 +415,25 @@ else {
 
 
 
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/12/05/iOS系统数据库的调用/" data-title="iOS系统数据库的调用" data-url="http://59.110.60.152/2016/12/05/iOS系统数据库的调用/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"kieronzhang"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
     
 
 
