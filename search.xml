@@ -4,9 +4,12 @@
   
     
     <entry>
-      <title><![CDATA[系统数据库的调用]]></title>
-      <url>http://59.110.60.152/2016/12/05/%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%B0%83%E7%94%A8/</url>
+      <title><![CDATA[iOS系统数据库的调用]]></title>
+      <url>http://59.110.60.152/2016/12/05/iOS%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%B0%83%E7%94%A8/</url>
       <content type="html"><![CDATA[<h1 id="SQLite简介"><a href="#SQLite简介" class="headerlink" title="SQLite简介"></a>SQLite简介</h1><p>SQLite 是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite 是在世界上最广泛部署的 SQL 数据库引擎。SQLite 源代码不受版权限制。 基础数据库语句：<a href="http://%3Chttp://www.runoob.com/sqlite/sqlite-tutorial.html%3E" target="_blank" rel="external">《SQLite菜鸟教程》</a></p>
+<p><excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
 <p>Xcode中引入SQLite 首先创建一个项目。<br>接下来引入SQLite，如图:<br><img src="http://59.110.60.152/wp-content/uploads/2016/11/A6CCBEFD-E0C6-4677-A3BA-F45E13561DC2-1.png" alt="a6ccbefd-e0c6-4677-a3ba-f45e13561dc2" width="1146" height="457" class="alignnone size-full wp-image-33"></p>
 <p>点开加号<br><img class="alignnone size-full wp-image-34" src="http://59.110.60.152/wp-content/uploads/2016/11/1750016A-4C04-4413-95BF-272C2A82CB6C.png" alt="1750016a-4c04-4413-95bf-272c2a82cb6c" width="441" height="525"></p>
 <p>选择一个库点击Add之后，完成后<br><img class="alignnone size-full wp-image-59" src="http://59.110.60.152/wp-content/uploads/2016/11/81BF5CD9-5DAD-40E7-9DF1-9175F7BFD94F.png" alt="81bf5cd9-5dad-40e7-9df1-9175f7bfd94f" width="704" height="166"><br>至此，SQLite库已经添加完成。</p>
@@ -153,7 +156,7 @@ else {
 }
 </pre>
 
-]]></content>
+</the>]]></content>
     </entry>
     
   
